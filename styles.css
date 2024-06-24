@@ -3,12 +3,12 @@
 
 @font-face {
   font-family: "Amsterdam Two Slanted";
-  src: url("../src/assets/fonts/amsterdamtwo.ttf");
+  src: url("assets/fonts/amsterdamtwo.ttf");
 }
 
 @font-face {
   font-family: "Amsterdam Two";
-  src: url("../src/assets/fonts/amsterdam-two.ttf");
+  src: url("assets/fonts/amsterdam-two.ttf");
 }
 
 :root {
