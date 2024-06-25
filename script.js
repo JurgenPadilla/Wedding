@@ -114,3 +114,28 @@ window.onclick = function(event) {
 document.getElementById('intro-overlay').addEventListener('click', function() {
     this.style.display = 'none';
 });
+
+// countdown 
+const countdown = document.getElementById('countdown');
+const weddingDate = new Date('2024-08-03T00:00:00');
+
+const formatNumber = (number) => number.toString().padStart(2, '0');
+
+const updateCountdown = () => {
+    const currentDate = new Date();
+    const diff = weddingDate - currentDate;
+    const days = Math.floor(diff / 1000 / 60 / 60 / 24);
+    const hours = Math.floor(diff / 1000 / 60 / 60) % 24;
+    const minutes = Math.floor(diff / 1000 / 60) % 60;
+    const seconds = Math.floor(diff / 1000) % 60;
+
+    countdown.innerHTML = `
+        <div><span class="number">${formatNumber(days)}</span><span>Días</span></div>
+        <div><span class="number">${formatNumber(hours)}</span><span>Hrs</span></div>
+        <div><span class="number">${formatNumber(minutes)}</span><span>Min</span></div>
+        <div><span class="number">${formatNumber(seconds)}</span><span>Seg</span></div>
+    `;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();

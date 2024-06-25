@@ -5,32 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernanda & Jurgen</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
 </head>
 <body>
     <div id="intro-overlay" class="intro-overlay">
-        <img src="assets/images/logo.svg" alt="Logo" class="intro-logo">
+        <div class="tooltip-container">
+            <span class="tooltip-text">toca aquí</span>
+            <img src="assets/images/logo.svg" alt="Logo" class="intro-logo" height="200px">
+        </div>
     </div>
 
-    <section id="names" class="section">
+    <div id="names" class="section">
         <div class="backgroun-pic">
             <div class="overlay">
                 <h1>Fernanda & Jurgen</h1>
             </div>
         </div>
-    </section>
-    <section id="date" class="section">
+    </div>
+    <div id="date" class="section">
         <h1>3 de Agosto de 2024</h1>
-        
-        <a href="https://logwork.com/countdown-fzwr" class="countdown-timer" data-style="columns" data-timezone="America/La_Paz" data-language="es" data-date="2024-08-03 00:00" data-digitscolor="#d8c173" onclick="return false;">.</a>
 
-        <button class="schedule-button" onclick="window.open('https://calendar.google.com/calendar/u/0/r/eventedit?text=Boda+Fernanda+y+Jurgen&dates=20240803/20240803', '_blank')">Agendar</button>
-    </section>
-    <section id="invitation" class="section">
-        <h2>Invitación</h2>
+        <div id="countdown">
+            <div><span class="number">00</span><span class="label">Días</span></div>
+            <div><span class="number">00</span><span class="label">Hrs</span></div>
+            <div><span class="number">00</span><span class="label">Min</span></div>
+            <div><span class="number">00</span><span class="label">Seg</span></div>
+        </div>
+        
+        <a href='https://calendar.google.com/calendar/u/0/r/eventedit?text=Boda+Fernanda+y+Jurgen&dates=20240803/20240803' target="_blank">
+            <button class="schedule-button">Agendar</button>
+        </a>
+    </div>
+    <div id="invitation" class="section">
+        <h1>Invitación</h1>
         <div id="invitation-text"></div>
-        <button class="confirm-button">Confirmar Asistencia</button>
-    </section>
+        <div style="display: flex; flex-direction: column;">
+            <a><button class="confirm-button">Confirmar Asistencia</button></a>
+            <a href="https://wa.me/59179312938?text=Perdón,+no+podré+asistir" target="_blank">
+                <button class="whatsapp-button">No asistiré</button>
+            </a>
+        </div>
+    </div>
     
     <!-- Modal Structure -->
     <div id="confirmModal" class="modal">
@@ -39,8 +53,8 @@
             <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScdzDRbndxBfYPv0NDr1f1Y8JIsecq84Rs3e9Wgt-C094y0Qg/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
-    <section id="itinerary" class="section">
-        <h2>Itinerario</h2>
+    <div id="itinerary" class="section">
+        <h1>Itinerario</h1>
         <ul>
             <li>
                 <lord-icon
@@ -52,7 +66,9 @@
                 <span class="event">Ceremonia Religiosa</span>
                 <span class="time">3:00 PM</span>
                 <span class="place">Iglesia ....</span>
-                <button class="location-button">Ver Ubicación</button>
+                <a href="https://maps.app.goo.gl/qgpbFkZLAnke3Uid8" target="_blank">
+                    <button class="location-button">Ver Ubicación</button>
+                </a>
             </li>
             <li>
                 <lord-icon
@@ -64,13 +80,15 @@
                 <span class="event">Recepción</span>
                 <span class="time">6:00 PM</span>
                 <span class="place">Salón de Eventos ....</span>
-                <button class="location-button">Ver Ubicación</button>
+                <a href="https://maps.app.goo.gl/qgpbFkZLAnke3Uid8" target="_blank"></a>
+                    <button class="location-button">Ver Ubicación</button>
+                </a>
             </li>
         </ul>
-    </section>
+    </div>
     
-    <section id="gallery" class="section">
-        <h2>Galería</h2>
+    <div id="gallery" class="section">
+        <h1>Galería</h1>
         <div class="container">
             <div class="slider-wrapper">
                 <button id="prev-slide" class="slide-button material-symbols-rounded">
@@ -102,9 +120,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <script src="script.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+
 </body>
 </html>
