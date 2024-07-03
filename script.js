@@ -8,26 +8,49 @@ window.addEventListener('DOMContentLoaded', (event) => {
         .then(data => {
             const participant = data.find(p => p.id == id);
             const invitationText = document.getElementById('invitation-text');
+            const invitationText1 = document.getElementById('invitation-text1'); //English
             if (participant) {
                 let invitationContent = `
                     <h3>Está invitado</h3>
+                    <h2>¡Te esperamos!</h2>
                     <h1>${participant.name}</h1>
+                    <h4>Invitación válida por ${participant.valid_for} pase.</h4>
                     <div class="valid-for">${participant.valid_for}</div>
                 `;
                 if (participant.valid_for !== 1) {
                     invitationContent = `
                         <h3>Están invitados</h3>
+                        <h2>¡Los esperamos!</h2>
                         <h1>${participant.name}</h1>
-                        <h4>Válido para</h4>
-                        <div class="valid-for">${participant.valid_for}</div>
+                        <h4>Invitación válida por ${participant.valid_for} pases.</h4>
+                        <div class="valid-for">${participant.valid_for}</div> 
+                        
                     `;
                 }
                 invitationText.innerHTML = invitationContent;
+
+                // English
+                let invitationContent1 = `
+                    <h3>You are invited</h3>
+                    <h2>We are waiting for you!</h2>
+                    <h1>${participant.name}</h1>
+                    <h4>Invitation valid for ${participant.valid_for} pass.</h4>
+                    <div class="valid-for">${participant.valid_for}</div>
+                `;
+                if (participant.valid_for !== 1) {
+                    invitationContent1 = `
+                        <h3>You are invited</h3>
+                        <h2>We are waiting for you!</h2>
+                        <h1>${participant.name}</h1>
+                        <h4>Invitation valid for ${participant.valid_for} passes.</h4>
+                        <div class="valid-for">${participant.valid_for}</div> 
+                        
+                    `;
+                }
+                invitationText1.innerHTML = invitationContent1;
             }
         });
 });
-
-
 
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
@@ -139,3 +162,22 @@ const updateCountdown = () => {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+// qr
+const qrModal = document.getElementById("qrModal");
+const qrBtn = document.querySelector(".qr-button");
+const qrSpan = document.querySelector(".close-button-qr");
+
+qrBtn.onclick = function() {
+    qrModal.style.display = "flex";
+}
+
+qrSpan.onclick = function() {
+    qrModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == qrModal) {
+        qrModal.style.display = "none";
+    }
+}

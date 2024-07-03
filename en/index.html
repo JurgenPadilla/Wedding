@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernanda & Jurgen</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div id="intro-overlay" class="intro-overlay">
         <div class="tooltip-container">
-            <span class="tooltip-text">toca aquí</span>
-            <img src="assets/images/logo.svg" alt="Logo" class="intro-logo" height="180px">
+            <span class="tooltip-text">tap here</span>
+            <img src="/assets/images/logo.svg" alt="Logo" class="intro-logo" height="180px">
         </div>
     </div>
 
@@ -24,32 +24,32 @@
     </div>
 
     <div id="parents" class="section">
-        <h2 style="color:var(--color1)">El día más importante de nuestras vidas ha llegado</h2>
-        <h1 style="color:var(--color4)">¡Nos casamos!</h1>
-        <div class="darkgreenmin"style="padding: 3rem 0.5rem 4rem;">Con la bendición de Dios y de nuestros padres</div> 
-        <h3>Padres de la Novia</h3>
+        <h2 style="color:var(--color1)">The most important day of our lives has arrived</h2>
+        <h1 style="color:var(--color4)">We are getting married!</h1>
+        <div class="darkgreenmin"style="padding: 3rem 0.5rem 4rem;">With the blessing of God and our parents</div>
+        <h3>Parents of the Bride</h3>
         <p>Roxana Aníbarro Arancibia</p>
         <p style="padding-bottom: 1.5rem;">Germán Illanez Puente</p>
-        <h3>Padres del Novio</h3>
+        <h3>Parents of the Groom</h3>
         <p>Teresa Romero Aguirre</p>
         <p>Jaime Padilla Yucra (♰)</p>
     </div>
     <div id="date" class="section">
-        <h1>¿Cuándo?</h1>
-        <h1 style="color:#697265;font-size: 4rem;">Sábado, 3 de Agosto de 2024</h1>
+        <h1>When?</h1>
+        <h1 style="color:#697265;font-size: 4rem;">Saturday, August 3, 2024</h1>
         <div id="countdown">
-            <div><span class="number">00</span><span class="label">Días</span></div>
+            <div><span class="number">00</span><span class="label">Days</span></div>
             <div><span class="number">00</span><span class="label">Hrs</span></div>
-            <div><span class="number">00</span><span class="label">Min</span></div>
-            <div><span class="number">00</span><span class="label">Seg</span></div>
+            <div><span class="number">00</span><span class="label">Mins</span></div>
+            <div><span class="number">00</span><span class="label">Secs</span></div>
         </div>
         
         <a href='https://calendar.google.com/calendar/u/0/r/eventedit?text=Boda+Fernanda+y+Jurgen&dates=20240803/20240803' target="_blank">
-            <button class="schedule-button">Agendar</button>
+            <button class="calendar-button">Add to Calendar</button>
         </a>
     </div>
     <div id="location" class="section">
-        <h1 style="padding-bottom: 0rem;">¿Dónde?</h1>
+        <h1 style="padding-bottom: 0rem;">Where?</h1>
         <lord-icon
             src="https://cdn.lordicon.com/surcxhka.json"
             trigger="hover"
@@ -60,54 +60,53 @@
         <div class="darkgreenmin">Casa Jardín Eventos</div>
         <div class="darkgreenmin">Av. Chilimarca #92</div>
         <a href="https://maps.app.goo.gl/jKcR8F3VR3fzGpGK7" target="_blank">
-            <button class="location-button">Ver Ubicación</button>
+            <button class="location-button">Location</button>
         </a>
     </div>
     <div id="invitation" class="section">
+        <h1>Invitation</h1>
+        <image src="/assets/images/linedeco.svg" alt="line" class="line" height="27px"></image>
+        <div id="invitation-text1"></div>
+        <image src="/assets/images/linedeco.svg" alt="line" class="line" height="26px"></image>
+        <h1 style="padding-top: 3rem;">Confirm your attendance</h1> 
 
-         
-        <h1>Invitación</h1>
-        <image src="assets/images/linedeco.svg" alt="line" class="line" height="27px"></image>
-        <div id="invitation-text"></div>
-        <image src="assets/images/linedeco.svg" alt="line" class="line" height="26px"></image>
-        <h1 style="padding-top: 3rem;">Confirma tu asistencia</h1>
-        <h1 style="font-weight:600; color:#697265;font-size: 2.5rem;padding: 0rem 0.5rem 2rem;">Para nosotros es muy importante compartir este día con nuestros seres queridos.</h1>
-        <h1 style="color:var(--color4);font-size: 3rem;padding: 0rem 0.5rem 0rem;">¡Nos encantaría contar con tu presencia!</h1>
+        <h1 style="font-weight:600; color:#697265;font-size: 2.5rem;padding: 0rem 0.5rem 2rem;">For us it is very important to share this day with our loved ones.</h1>
+        <h1 style="color:var(--color4);font-size: 3rem;padding: 0rem 0.5rem 0rem;">We would love to have your presence!</h1>
         <div style="display: flex; flex-direction: column;">
-            <a><button class="confirm-button">Confirmar Asistencia</button></a>
+
+            <a><button class="confirm-button">RSVP</button></a>
             <div id="confirmModal" class="modal">
                 <div class="modal-content">
                     <span class="close-button">&times;</span>
                     <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScdzDRbndxBfYPv0NDr1f1Y8JIsecq84Rs3e9Wgt-C094y0Qg/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
-            <a href="https://wa.me/59179309010?text=Perdón,+no+podré+asistir" target="_blank">
-                <button class="whatsapp-button">No asistiré</button>
+            <a href="https://wa.me/59179309010?text=Sorry,+I+won't+be+able+to+attend" target="_blank">
+                <button class="whatsapp-button">I won't attend</button>
             </a>
-            <a href="https://wa.me/59179309010?text=Perdón,+no+podré+asistir,+cancelo+mi+confirmación" target="_blank">
-                <button class="whatsapp-button">Cancelar Confirmación</button>
+            <a href="https://wa.me/59179309010?text=Sorry,+I+won't+be+able+to+attend,+canceling+my+confirmation" target="_blank">
+                <button class="whatsapp-button">Cancel Confirmation</button>
             </a>
         </div>
-        <p style="padding-top: 3rem;">Nota importante: Confirmar hasta el 27 de julio</p>
+        <p style="padding-top: 3rem;">Important note: Confirm by July 27</p>
     </div>
-    
 
-    <h1 style="text-align: center;">Itinerario</h1>
+    <h1 style="text-align: center;">Itinerary</h1>
     <div id="itinerary" class="section">
         
         <table id="itinerary">
             <tr>
                 <td class="icon">
-                    <img src="assets/images/hand.svg" alt="welcome" class="welcome" height="150px">
+                    <img src="/assets/images/hand.svg" alt="welcome" class="welcome" height="150px">
                 </td>
                 <td class="info" style="border-left: 3px solid #000; text-align: left;">
-                    <span class="event">Bienvenida</span>
+                    <span class="event">Welcome</span>
                     <span class="time">3:00 PM</span>
                 </td>
             </tr>
             <tr>
                 <td class="info">
-                    <span class="event">Ceremonia Religiosa</span>
+                    <span class="event">Religious Ceremony</span>
                     <span class="time">4:00 PM</span>
                 </td>
                 <td class="icon" style="border-left: 3px solid #000;">
@@ -129,43 +128,43 @@
                     </lord-icon>
                 </td>
                 <td class="info" style="border-left: 3px solid #000; text-align: left;">
-                    <span class="event">Brindis</span>
+                    <span class="event">Toast</span>
                     <span class="time">5:30 PM</span>
                 </td>
             </tr>
             <tr>
                 <td class="info">
-                    <span class="event">Cena</span>
+                    <span class="event">Dinner</span>
                     <span class="time">7:00 PM</span>
                 </td>
                 <td class="icon"  style="border-left: 3px solid #000;">
-                    <img src="assets/images/dinner.svg" alt="dinner" class="dinner" height="170px">
+                    <img src="/assets/images/dinner.svg" alt="dinner" class="dinner" height="170px">
                 </td>
             </tr>
             <tr>
                 <td class="icon">
-                    <img src="assets/images/wowemoji.svg" alt="wow" class="wow" height="150px">
+                    <img src="/assets/images/wowemoji.svg" alt="wow" class="wow" height="150px">
                 </td>
                 <td class="info" style="border-left: 3px solid #000; text-align: left;">
-                    <span class="event">Sorpresa</span>
+                    <span class="event">Surprise</span>
                     <span class="time">8:00 PM</span>
                 </td>
             </tr>
             <tr>
                 <td class="info">
-                    <span class="event">Torta</span>
+                    <span class="event">Cake</span>
                     <span class="time">10:30 PM</span>
                 </td>
                 <td class="icon"  style="border-left: 3px solid #000;">
-                    <img src="assets/images/cake.svg" alt="cake" class="cake" height="180px">
+                    <img src="/assets/images/cake.svg" alt="cake" class="cake" height="180px">
                 </td>
             </tr>
             <tr>
                 <td class="icon">
-                    <img src="assets/images/car.svg" alt="heart" class="heart" height="170px">
+                    <img src="/assets/images/car.svg" alt="heart" class="heart" height="170px">
                 </td>
                 <td class="info" style="border-left: 3px solid #000; text-align: left;">
-                    <span class="event">Despedida</span>
+                    <span class="event">Farewell</span>
                     <span class="time">01:00 AM</span>
                 </td>
             </tr>
@@ -173,32 +172,33 @@
     </div>
 
     <div id="gift" class="section">
-        <h1 style="font-size: 4rem;">Sugerencia de Regalo</h1>
+        <h1 style="font-size: 4rem;">Gift Suggestion</h1>
         <lord-icon
             src="https://cdn.lordicon.com/ofwxettw.json"
             trigger="hover"
             colors="primary:#121331,secondary:#d8c173"
             style="width:250px;height:250px">
         </lord-icon>
-        <h1 style="font-weight:600; color:#697265;font-size: 2.5rem;padding: 0rem 0.5rem 0rem;">Su presencia será el mejor regalo, pero si deseas tener un detalle con nosotros puedes hacerlo mediante depósito bancario.</h1>
+        <h1 style="color:#697265;font-size: 3rem;padding: 0rem 0.5rem 0rem;">Your presence will be the best gift, but if you wish to have a detail with us you can do so by bank deposit.</h1>
         
-        <a><button class="qr-button">Ver QR</button></a>
-        <h1 style="font-weight:600; color:#697265;font-size: 2.5rem;padding: 3.5rem 0.5rem 0rem;">También podemos recibir presentes físicos en la Calle "Los Molles" #849</h1>
+        <a><button class="qr-button">See QR</button></a>
+        <h1 style="font-weight:600; color:#697265;font-size: 2.5rem;padding: 3.5rem 0.5rem 0rem;">We also accept physical gifts at Calle "Los Molles" #849</h1>
         <a href="https://maps.app.goo.gl/M4RSG5UXRoWyhyuM9" target="_blank">
-            <button class="location-button">Ver Ubicación</button>
+            <button class="location-button">Location</button>
+
         </a> 
     </div>
     <div id="qrModal" class="modalqr">
         <div class="modalqr-content">
             <span class="close-button-qr">&times;</span>
-            <img id="qrImage" src="assets/images/qr.png" alt="QR Code" style="max-width: 100%; margin-top:1.5rem;">
-            <a id="downloadLink" href="assets/images/qr.png" download="qr.png">
+            <img id="qrImage" src="/assets/images/qr.png" alt="QR Code" style="max-width: 100%; margin-top:1.5rem;">
+            <a id="downloadLink" href="/assets/images/qr.png" download="qr.png">
                 <i class="fas fa-download download-icon"></i>
             </a>
         </div>
     </div>
     <div id="upload_pics" class="section">
-        <h1 style="font-size: 4rem;">¡Recordar es volver a vivir!</h1>
+        <h1 style="font-size: 4rem;">To remember is to live again!</h1>
 
         <lord-icon
             src="https://cdn.lordicon.com/ppwsfvnn.json"
@@ -206,43 +206,43 @@
             colors="primary:#121331,secondary:#d8c173"
             style="width:250px;height:250px">
         </lord-icon>
-        <h1 style="color:#697265;font-size: 3rem;padding: 0rem 0.5rem 0rem;">Como no queremos perder ningún detalle de nuestra boda, </h1>
-        <h1 style="color:#697265;font-size: 2.5rem;padding: 0rem 0.5rem 0rem;">te invitamos a compartir las fotos de ese día tan importante para nosotros.</h1>
+        <h1 style="color:#697265;font-size: 3rem;padding: 0rem 0.5rem 0rem;">As we don't want to miss any detail of our wedding, </h1>
+        <h1 style="color:#697265;font-size: 2.8rem;padding: 0rem 0.5rem 0rem;">we invite you to share the photos of this important.</h1>
         <a href="#" target="_blank">
-            <button class="google-drive-button">Sube tus Fotos</button>
+            <button class="google-drive-button">Upload Photos</button>
         </a>
     </div>
     
 
     <div id="dress code" class="section">
-        <h1 style="font-size: 4rem;">Código de Vestimenta</h1>
-        <div class="darkgreenmin">Formal</div>
-        <img src="assets/images/dresscode.svg" alt="dresscode" class="dresscode" height="180px" width="380px">
+        <h1 style="font-size: 4rem;">Dress Code</h1>
+        <div class="darkgreenmin">Black Tie</div>
+        <img src="/assets/images/dresscode.svg" alt="dresscode" class="dresscode" height="180px" width="380px">
         
     </div>
     
     <div id="gallery" class="section">
-        <h1>Algo de Nuestra Historia</h1>
+        <h1>Our Story</h1>
         <div class="container">
             <div class="slider-wrapper">
                 <button id="prev-slide" class="slide-button material-symbols-rounded">
                     chevron_left
                 </button>
                 <ul class="image-list">
-                    <li class="image-item"><img src="assets/images/1.jpg" alt="1"></li>
-                    <li class="image-item"><img src="assets/images/3.jpg" alt="3"></li>                    
-                    <li class="image-item"><img src="assets/images/4.jpg" alt="4"></li>
-                    <li class="image-item"><img src="assets/images/2.jpg" alt="2"></li>
-                    <li class="image-item"><img src="assets/images/5.jpg" alt="5"></li>
-                    <li class="image-item"><img src="assets/images/6.jpg" alt="6"></li>
-                    <li class="image-item"><img src="assets/images/7.jpg" alt="7"></li>
-                    <li class="image-item"><img src="assets/images/8.jpg" alt="8"></li>
-                    <li class="image-item"><img src="assets/images/9.jpg" alt="9"></li>
-                    <li class="image-item"><img src="assets/images/10.jpg" alt="10"></li>
-                    <li class="image-item"><img src="assets/images/11.jpg" alt="11"></li>
-                    <li class="image-item"><img src="assets/images/12.jpg" alt="12"></li>
-                    <li class="image-item"><img src="assets/images/13.jpg" alt="13"></li>
-                    <li class="image-item"><img src="assets/images/14.jpg" alt="14"></li>
+                    <li class="image-item"><img src="/assets/images/1.jpg" alt="1"></li>
+                    <li class="image-item"><img src="/assets/images/3.jpg" alt="3"></li>                    
+                    <li class="image-item"><img src="/assets/images/4.jpg" alt="4"></li>
+                    <li class="image-item"><img src="/assets/images/2.jpg" alt="2"></li>
+                    <li class="image-item"><img src="/assets/images/5.jpg" alt="5"></li>
+                    <li class="image-item"><img src="/assets/images/6.jpg" alt="6"></li>
+                    <li class="image-item"><img src="/assets/images/7.jpg" alt="7"></li>
+                    <li class="image-item"><img src="/assets/images/8.jpg" alt="8"></li>
+                    <li class="image-item"><img src="/assets/images/9.jpg" alt="9"></li>
+                    <li class="image-item"><img src="/assets/images/10.jpg" alt="10"></li>
+                    <li class="image-item"><img src="/assets/images/11.jpg" alt="11"></li>
+                    <li class="image-item"><img src="/assets/images/12.jpg" alt="12"></li>
+                    <li class="image-item"><img src="/assets/images/13.jpg" alt="13"></li>
+                    <li class="image-item"><img src="/assets/images/14.jpg" alt="14"></li>
                 </ul>
                 <button id="next-slide" class="slide-button material-symbols-rounded">
                     chevron_right
@@ -254,9 +254,9 @@
                 </div>
             </div>
         </div>
-        <h1 style="color:#697265;font-size: 2.5rem;padding: 0rem 0.5rem 0rem;">¡Gracias por acompañarnos en nuestro día!</h1>
+        <h1 style="color:#697265;font-size: 2.5rem;padding: 0rem 0.5rem 0rem;">Thank you for joining us on our special day!</h1>
     </div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
 </body>

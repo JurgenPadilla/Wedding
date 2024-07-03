@@ -18,6 +18,7 @@
   --color3: #fcf9ea;
   --color4: #d8c173;
   --color5: #838C7F;
+  --color6: #697265;
   --bg-invitation: linear-gradient(to right, #fcf9ea, #f9f7f4);
 }
 
@@ -67,6 +68,22 @@ h2 {
   font-size: 3.5rem;
   padding-bottom: 2rem;
 }
+
+.darkgreenmin{
+  font-family: 'Great Vibes', cursive;
+  color: var(--color6);
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 0rem 0.5rem 0rem;
+}
+
+#parents h3 {
+  font-family: 'Great Vibes', cursive;
+  color: var(--color2);
+  font-size: 3rem;
+  padding-bottom: 0.2rem;
+}
+
 
 .backgroun-pic {
   position: relative;
@@ -143,17 +160,18 @@ h2 {
 }
 
 #invitation-text {
-  background: var(--bg-invitation);
+  /* background: var(--bg-invitation); */
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 #invitation-text h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin: 1rem 0;
-  color: white;
+  font-weight: normal;
+  color: black;
 }
 
 #invitation-text h1 {
@@ -162,6 +180,7 @@ h2 {
   margin: 1rem 0;
   color: var(--color5);
   font-weight: normal;
+  padding-bottom: 1rem;
 }
 
 #invitation-text .valid-for {
@@ -174,12 +193,7 @@ h2 {
   font-size: 2rem;
 }
 
-.invitation h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
-  margin: 1rem 0;
-  font-weight: normal;
-}
+
 
 button:not(#gallery button) {
   margin-top: 2rem;
@@ -190,24 +204,43 @@ button:not(#gallery button) {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:not(#gallery button):hover {
   background-color: #a96a65;
 }
 
-#itinerary ul {
-  list-style: none;
-  padding: 0;
+#itinerary {
+  padding-top: 0rem;
+  display: flex;
+  justify-content: center;
 }
 
-#itinerary li {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#itinerary table {
+  width: 70%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+
+#itinerary td {
+  vertical-align: middle;
+  width: 190px;
+}
+
+#itinerary .icon {
   text-align: center;
+  /* border-left: 3px solid #000; */
+}
+
+#itinerary .info {
+  text-align: right;
+  padding: 0 1rem;
+}
+
+#itinerary .event,
+#itinerary .time {
+  display: block;
 }
 
 #itinerary .event {
@@ -218,6 +251,7 @@ button:not(#gallery button):hover {
 #itinerary .time {
   margin-bottom: 0.5rem;
 }
+
 
 
 /* Gallery */
@@ -490,18 +524,65 @@ button:not(#gallery button):hover {
   cursor: pointer;
 }
 
-.xpWfed {
-  display: none;
-}
-
-.T2dutf {
-  display: none;
-}
-
 @media (max-width: 1100px) {
   .responsive-iframe {
     width: 100%;
   }
 }
 
+/* qr */
+.modalqr {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
 
+.modalqr-content {
+  background-color: #fcf9ea;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  max-width: 350px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.close-button-qr {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: normal;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+  /* margin-bottom: 10px; */
+}
+
+.close-button-qr:hover,
+.close-button-qr:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-icon {
+  margin-top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #8f7625;
+}
+
+.download-icon:hover {
+  color: #a96a65;
+}
