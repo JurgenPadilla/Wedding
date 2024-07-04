@@ -158,15 +158,13 @@ h2 {
   padding: 5rem 0;
   text-align: center;
 }
-
-#invitation-text {
-  /* background: var(--bg-invitation); */
+#invitation-text,
+#invitation-text1 {
   padding: 2rem;
-  border-radius: 10px;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
-#invitation-text h2 {
+#invitation-text h2,
+#invitation-text1 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin: 1rem 0;
@@ -174,7 +172,8 @@ h2 {
   color: black;
 }
 
-#invitation-text h1 {
+#invitation-text h1,
+#invitation-text1 h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 5rem;
   margin: 1rem 0;
@@ -183,7 +182,8 @@ h2 {
   padding-bottom: 1rem;
 }
 
-#invitation-text .valid-for {
+#invitation-text .valid-for,
+#invitation-text1 .valid-for {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 2rem;
@@ -192,6 +192,7 @@ h2 {
   border-radius: 50%;
   font-size: 2rem;
 }
+
 
 
 
