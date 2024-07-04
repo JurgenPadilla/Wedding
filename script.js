@@ -139,7 +139,7 @@ document.getElementById('intro-overlay').addEventListener('click', function() {
 
 // countdown 
 const countdown = document.getElementById('countdown');
-const weddingDate = new Date('2024-08-03T00:00:00');
+const weddingDate = new Date('2024-08-03T15:30:00');
 
 const formatNumber = (number) => number.toString().padStart(2, '0');
 

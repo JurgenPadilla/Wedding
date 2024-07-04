@@ -165,7 +165,7 @@ h2 {
   padding: 3rem 0 5rem 0;
 }
 
-#location, #rsvp, #gift, #dresscode {
+#location, #rsvp, #gift, #dresscode, #thanks {
   background-color: white;
 }
 
@@ -442,7 +442,7 @@ button:not(#gallery button):hover {
 }
 
 .tooltip-text {
-  visibility: hidden;
+  /* visibility: hidden; */
   background-color: var(--color7);
   color: #fff;
   text-align: center;
