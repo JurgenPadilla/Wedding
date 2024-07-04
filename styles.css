@@ -19,6 +19,7 @@
   --color4: #d8c173;
   --color5: #838C7F;
   --color6: #697265;
+  --color7: #2a4748;
   --bg-invitation: linear-gradient(to right, #fcf9ea, #f9f7f4);
 }
 
@@ -51,7 +52,7 @@ body {
 
 h1 {
   font-family: 'Great Vibes', cursive;
-  color: var(--color1);
+  color: var(--color7);
   font-size: 4.6rem;
   padding-bottom: 2rem;
 }
@@ -71,7 +72,7 @@ h2 {
 
 .darkgreenmin{
   font-family: 'Great Vibes', cursive;
-  color: var(--color6);
+  color: var(--color7);
   font-size: 3.5rem;
   font-weight: bold;
   padding: 0rem 0.5rem 0rem;
@@ -187,7 +188,7 @@ h2 {
   font-family: 'Great Vibes', cursive;
   font-size: 5rem;
   margin: 1rem 0;
-  color: var(--color5);
+  color: var(--color7);
   font-weight: normal;
   padding-bottom: 1rem;
 }
@@ -197,7 +198,7 @@ h2 {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 2rem;
-  background-color: var(--color1);
+  background-color: var(--color7);
   color: white;
   border-radius: 50%;
   font-size: 2rem;
@@ -210,7 +211,7 @@ button:not(#gallery button) {
   margin-top: 2rem;
   font-size: 1.8rem; 
   padding: 0.8rem 1.6rem; 
-  background-color: var(--color1);
+  background-color: var(--color7);
   color: white;
   border: none;
   border-radius: 5px;
@@ -219,7 +220,7 @@ button:not(#gallery button) {
 }
 
 button:not(#gallery button):hover {
-  background-color: var(--color6);
+  background-color: #355a5b;
 }
 
 #itinerary {
@@ -441,7 +442,7 @@ button:not(#gallery button):hover {
 
 .tooltip-text {
   visibility: hidden;
-  background-color: var(--color5);
+  background-color: var(--color7);
   color: #fff;
   text-align: center;
   border-radius: 5px;
@@ -469,7 +470,7 @@ button:not(#gallery button):hover {
   transform: translateX(-50%);
   border-width: 6px;
   border-style: solid;
-  border-color: var(--color5) transparent transparent transparent;
+  border-color: var(--color7) transparent transparent transparent;
 }
 
 .intro-logo {
