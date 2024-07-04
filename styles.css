@@ -155,9 +155,19 @@ h2 {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 5rem 0; 
   text-align: center;
 }
+
+#parents {
+  background-color: white;
+  padding: 3rem 0 5rem 0;
+}
+
+#location, #rsvp, #gift, #dresscode {
+  background-color: white;
+}
+
 #invitation-text,
 #invitation-text1 {
   padding: 2rem;
