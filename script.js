@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         <h3>Está invitado</h3>
                         <h2>¡Te esperamos!</h2>
                         <h1>${participant.name}</h1>
-                        <h4>Invitación válida por ${participant.valid_for}</h4>
+                        <h4>Invitación válida por</h4>
                         <div class="valid-for">${participant.valid_for}</div>
                         <h4>pase</h4>
                     `;
@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                             <h3>Están invitados</h3>
                             <h2>¡Los esperamos!</h2>
                             <h1>${participant.name}</h1>
-                            <h4>Invitación válida por ${participant.valid_for}</h4>
+                            <h4>Invitación válida por</h4>
                             <div class="valid-for">${participant.valid_for}</div>
                             <h4>pases</h4>
                         `;
