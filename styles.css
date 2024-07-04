@@ -210,7 +210,7 @@ button:not(#gallery button) {
   margin-top: 2rem;
   font-size: 1.8rem; 
   padding: 0.8rem 1.6rem; 
-  background-color: var(--color2);
+  background-color: var(--color1);
   color: white;
   border: none;
   border-radius: 5px;
@@ -219,7 +219,7 @@ button:not(#gallery button) {
 }
 
 button:not(#gallery button):hover {
-  background-color: #a96a65;
+  background-color: var(--color6);
 }
 
 #itinerary {
