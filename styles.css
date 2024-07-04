@@ -258,6 +258,7 @@ button:not(#gallery button):hover {
 #itinerary .event {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: var(--color2);
 }
 
 #itinerary .time {
