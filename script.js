@@ -13,9 +13,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
             return response.json();
         })
         .then(data => {
-            console.log('Participants data:', data);
+            // console.log('Participants data:', data);
             const participant = data.find(p => p.id == id);
-            console.log('Participant:', participant);
+            // console.log('Participant:', participant);
 
             const invitationText = document.getElementById('invitation-text'); // Spanish
 
@@ -138,12 +138,11 @@ document.getElementById('intro-overlay').addEventListener('click', function() {
 });
 
 // countdown 
-const countdown = document.getElementById('countdown');
-const weddingDate = new Date('2024-08-03T15:30:00');
-
 const formatNumber = (number) => number.toString().padStart(2, '0');
 
-const updateCountdown = () => {
+const updateCountdown = (lang) => {
+    const countdown = document.getElementById('countdown');
+    const weddingDate = new Date('2024-08-03T15:30:00');
     const currentDate = new Date();
     const diff = weddingDate - currentDate;
     const days = Math.floor(diff / 1000 / 60 / 60 / 24);
@@ -151,16 +150,25 @@ const updateCountdown = () => {
     const minutes = Math.floor(diff / 1000 / 60) % 60;
     const seconds = Math.floor(diff / 1000) % 60;
 
-    countdown.innerHTML = `
-        <div><span class="number">${formatNumber(days)}</span><span>Días</span></div>
-        <div><span class="number">${formatNumber(hours)}</span><span>Hrs</span></div>
-        <div><span class="number">${formatNumber(minutes)}</span><span>Min</span></div>
-        <div><span class="number">${formatNumber(seconds)}</span><span>Seg</span></div>
-    `;
-}
+    const labels = {
+        es: ['Días', 'Hrs', 'Min', 'Seg'],
+        en: ['Days', 'Hrs', 'Min', 'Sec']
+    };
 
-setInterval(updateCountdown, 1000);
-updateCountdown();
+    const [daysLabel, hoursLabel, minutesLabel, secondsLabel] = labels[lang];
+
+    countdown.innerHTML = `
+        <div><span class="number">${formatNumber(days)}</span><span>${daysLabel}</span></div>
+        <div><span class="number">${formatNumber(hours)}</span><span>${hoursLabel}</span></div>
+        <div><span class="number">${formatNumber(minutes)}</span><span>${minutesLabel}</span></div>
+        <div><span class="number">${formatNumber(seconds)}</span><span>${secondsLabel}</span></div>
+    `;
+};
+
+const initializeCountdown = (lang) => {
+    setInterval(() => updateCountdown(lang), 1000);
+    updateCountdown(lang);
+};
 
 // qr
 const qrModal = document.getElementById("qrModal");

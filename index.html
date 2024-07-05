@@ -40,11 +40,16 @@
         <h1>¿Cuándo?</h1>
         <h1 style="color:var(--color7);font-size: 4rem;">Sábado, 3 de Agosto de 2024</h1>
         <div id="countdown">
-            <div><span class="number">00</span><span class="label">Días</span></div>
+            <!-- <div><span class="number">00</span><span class="label">Días</span></div>
             <div><span class="number">00</span><span class="label">Hrs</span></div>
             <div><span class="number">00</span><span class="label">Min</span></div>
-            <div><span class="number">00</span><span class="label">Seg</span></div>
+            <div><span class="number">00</span><span class="label">Seg</span></div> -->
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                initializeCountdown('es');
+            });
+        </script>
         
         <a href='https://calendar.google.com/calendar/u/0/r/eventedit?text=Boda+Fernanda+y+Jurgen&dates=20240803/20240803' target="_blank">
             <button class="schedule-button">Agendar</button>
