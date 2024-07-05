@@ -26,8 +26,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         <h3>You are invited</h3>
                         <h2>We are waiting for you!</h2>
                         <h1>${participant.name}</h1>
-                        <h4>Invitation valid for ${participant.valid_for} pass.</h4>
+                        <h4>Invitation valid for</h4>
                         <div class="valid-for">${participant.valid_for}</div>
+                        <h4>pass</h4>
                     `;
                     if (participant.valid_for !== 1) {
                         invitationContent1 = `
@@ -36,6 +37,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                             <h1>${participant.name}</h1>
                             <h4>Invitation valid for ${participant.valid_for} passes.</h4>
                             <div class="valid-for">${participant.valid_for}</div>
+                            <h4>Invitation valid for ${participant.valid_for} passes.</h4>
                         `;
                     }
                     invitationText1.innerHTML = invitationContent1;
