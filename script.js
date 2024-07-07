@@ -100,9 +100,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
 });
 
-// Existing script for opening and closing modal
+// script for opening and closing modal
 const modal = document.getElementById("confirmModal");
 const btn = document.querySelector(".confirm-button");
+const span1 = document.querySelector(".close-button");
 
 btn.onclick = function() {
   modal.style.display = "flex";
@@ -113,6 +114,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+span1.onclick = function() {
+    modal.style.display = "none";
+  }
 
 
 

@@ -13,9 +13,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
             return response.json();
         })
         .then(data => {
-            console.log('Participants data:', data);
+            // console.log('Participants data:', data);
             const participant = data.find(p => p.id == id);
-            console.log('Participant:', participant);
+            // console.log('Participant:', participant);
 
             const invitationText1 = document.getElementById('invitation-text1'); // English
 
