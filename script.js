@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             // console.log('Participant:', participant);
 
             const invitationText = document.getElementById('invitation-text'); // Spanish
+            const modalContent = document.getElementById('modal-content'); 
 
             if (participant) {
                 if (invitationText) {
@@ -41,6 +42,55 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     }
                     invitationText.innerHTML = invitationContent;
                 }
+
+                if (modalContent) {
+                    let iframeContent = '';
+                    switch (participant.valid_for) {
+                        case 1:
+                            iframeContent = `
+                                <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdkeBWQzoaXsrHe0ufTBtxfq9F4lndbnoXZCgZDjGJ3M5J8hA/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            `;
+                            break;
+                        case 2:
+                            iframeContent = `
+                                <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdD9UiTQmz8xDeabbgcvMfoRfCrCD4i4beECQJxbLJ_uFwkxw/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            `;
+                            break;
+                        case 3:
+                            iframeContent = `
+                                <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdZQZBlhmDR9zpnIJCdUmCDsB9U2P66d5DrdXrYzFgob76QRQ/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            `;
+                            break;
+                        case 4:
+                            iframeContent = `
+                                <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeEi5kHNFRtxdZAjR10JYAtSvz-iBqYey_eLf1vLdx-kQFT-g/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            `;
+                            break;
+                        case 5:
+                            iframeContent = `
+                                <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSd4drERoMwbb3okooyodoCepIeiZ8AE6-kT4-ueMAHqZhHcOw/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            `;
+                            break;
+                        case 6:
+                            iframeContent = `
+                                <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdx8NrR3IyQ-n0kXU9m6qlJEkb_yASLr_oYZOtMVj9kF90eeg/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            `;
+                            break;
+                        default:
+                            iframeContent = `
+                                'No se ha encontrado formulario para esta cantidad de pases'
+                            `;
+                            break;
+                    }
+                    modalContent.innerHTML += iframeContent;
+
+                    // Reassign the close button event listener after modifying the modal content
+                    const span = document.querySelector(".close-button");
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                }
+    
             } else {
                 console.error('Participant not found');
             }
@@ -49,6 +99,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
             console.error('Error fetching participants:', error);
         });
 });
+
+// Existing script for opening and closing modal
+const modal = document.getElementById("confirmModal");
+const btn = document.querySelector(".confirm-button");
+
+btn.onclick = function() {
+  modal.style.display = "flex";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 
 
 const initSlider = () => {
@@ -112,25 +177,6 @@ const initSlider = () => {
 }
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
-
-// Modal Functionality
-const modal = document.getElementById("confirmModal");
-const btn = document.querySelector(".confirm-button");
-const span = document.querySelector(".close-button");
-
-btn.onclick = function() {
-  modal.style.display = "flex";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 // Intro overlay
 document.getElementById('intro-overlay').addEventListener('click', function() {
