@@ -65,8 +65,8 @@
         "valid_for": 5
     },
     {
-        "id": "d845c20ba84878a945b7e689eb921063",
-        "name": "Arturo Dávalos y Flia.",
+        "id": "1977f3fd024927338d75211f388c9c7b",
+        "name": "Arturo Dávalos y Flia",
         "valid_for": 3
     },
     {
@@ -295,13 +295,13 @@
         "valid_for": 2
     },
     {
-        "id": "51e5993fda5a25c6c356d875a7b26269",
+        "id": "3fbccb595fa79c3e54bb9e2b0b16ef22",
         "name": "Daniel Asín",
-        "valid_for": 1
+        "valid_for": 2
     },
     {
         "id": "91b94029f5e7892eb397169a5a1ec632",
-        "name": "Gabriel Aparicio",
+        "name": "Gabriel Castillo",
         "valid_for": 1
     },
     {
@@ -567,6 +567,11 @@
     {
         "id": "e0185d1a9206beff6835d84ecd426935",
         "name": "Alexander Bondurant and Mrs.",
+        "valid_for": 2
+    },
+    {
+        "id": "8405477e37f40450b212e3a1195a983b",
+        "name": "Mike Certoma and Mrs.",
         "valid_for": 2
     },
     {
