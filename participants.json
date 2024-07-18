@@ -618,5 +618,30 @@
         "id": "68ce7f0426f291ff616b87e2fb1b0713",
         "name": "Milton Moscoso y Sra.",
         "valid_for": 2
+    },
+    {
+        "id": "7c0374a64b09f9c064a4810594a0d4c7",
+        "name": "Israel Cespedes y Sra.",
+        "valid_for": 2
+    },
+    {
+        "id": "bb7c5147c19441e54440a2b8b2e6530e",
+        "name": "Marco Antonio Navarro y Sra.",
+        "valid_for": 2
+    },
+    {
+        "id": "284a5df513044221a23cd2c510e12abe",
+        "name": "Odalys Chavez",
+        "valid_for": 1
+    },
+    {
+        "id": "101b61fff3feab9b75149fd8972b8589",
+        "name": "Freddy Sanchez y Sra",
+        "valid_for": 2
+    },
+    {
+        "id": "df4f119c95d7b1e608b8aa057916d5ae",
+        "name": "Beatriz Benitez",
+        "valid_for": 1
     }
 ]
