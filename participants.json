@@ -653,5 +653,25 @@
         "id": "c118be82c25b3aec84db3abaebf0689d",
         "name": "Nancy Farell",
         "valid_for": 2
+    },
+    {
+        "id": "c1854d7fd3baba888b9c5bdfd8143def",
+        "name": "Alcides Ángulo",
+        "valid_for": 1
+    },
+    {
+        "id": "8c3bc1c48e6d84c2ec7904583454064f",
+        "name": "David Valda",
+        "valid_for": 1
+    },
+    {
+        "id": "52ad20460b8f8a585e3bfd229116fa47",
+        "name": "José Taboada",
+        "valid_for": 1
+    },
+    {
+        "id": "93d71489f174e4081349d521eac2ab3c",
+        "name": "Adrián Vera",
+        "valid_for": 1
     }
 ]
