@@ -673,5 +673,26 @@
         "id": "93d71489f174e4081349d521eac2ab3c",
         "name": "Adrián Vera",
         "valid_for": 1
+    },
+    {
+        "id": "b139e4047f5b12e9f9cdbc18e74ab000",
+        "name": "Nestor Illanes",
+        "valid_for": 2
+    },
+    {
+        "id": "12f82dd92cc294f49640b88b282d2ba7",
+        "name": "Gibran Jalil y Sra.",
+        "valid_for": 2
+    },
+    
+    {
+        "id": "028aea95a4aac99067740b743c8d94a0",
+        "name": "Patricia Garces y Flia.",
+        "valid_for": 2
+    },
+    {
+        "id": "b08b7dc91d98983f7bd9ffd076062436",
+        "name": "Adrián Ponce De Léon y Sra..",
+        "valid_for": 2
     }
 ]
