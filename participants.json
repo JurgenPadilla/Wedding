@@ -41,7 +41,7 @@
     },
     {
         "id": "6daa8cdf8a0c5dc4f4660506147edb9b",
-        "name": "Yhamil Torranzos y Flia",
+        "name": "Yhamil Toranzos y Flia",
         "valid_for": 2
     },
     {
@@ -749,5 +749,10 @@
         "id": "52c1f7c47da91ade72df4b0970be5c4d",
         "name": "Dilan Aguirre",
         "valid_for": 1
+    },
+    {
+        "id": "951fe5284d907ad92b62d55ae018f3a7",
+        "name": "Jaime Alvarez y Sra.",
+        "valid_for": 2
     }
 ]
