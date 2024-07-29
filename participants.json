@@ -714,5 +714,15 @@
         "id": "5ee4a79d70965e8f344161a84f80e895",
         "name": "Mabel Sanchez y Flia.",
         "valid_for": 2
+    },
+    {
+        "id": "07a0879b92e12ddeaa245ea9cc91f5fb",
+        "name": "Joaquin Orellana y Sra.",
+        "valid_for": 2
+    },
+    {
+        "id": "055428e2be0171756d42b1494f3118ee",
+        "name": "Ramiro Vargas",
+        "valid_for": 2
     }
 ]
