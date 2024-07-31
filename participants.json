@@ -759,5 +759,46 @@
         "id": "5bdbff5c38d6a588657f4dfd8073db5a",
         "name": "Marcelo Villamonte",
         "valid_for": 2
+    },
+    
+    {
+        "id": "c556c6db2cc0e098296ea15ca9246d55",
+        "name": "Medardo Flores",
+        "valid_for": 2
+    },
+    {
+        "id": "b3d16607f114fb0577cfbf5ee7e96c9f",
+        "name": "Jimmy Romero",
+        "valid_for": 1
+    },
+    {
+        "id": "9069e64da3cbbf408715f7d2dde83236",
+        "name": "Jhamil Villarroel",
+        "valid_for": 1
+    },
+    {
+        "id": "28d9b089637d22c5a054d323837f021b",
+        "name": "Neisa Terrazas",
+        "valid_for": 1
+    },
+    {
+        "id": "6f511cc1df0a6372e49c6a719f697e2d",
+        "name": "Giannina Caceres",
+        "valid_for": 1
+    },
+    {
+        "id": "d4cf0b2dae9245a7cad1a94d86018a28",
+        "name": "Kevin Campos",
+        "valid_for": 1
+    },
+    {
+        "id": "477d3dd0444e3ba3831c3799b7639bf8",
+        "name": "Sharon Rada",
+        "valid_for": 1
+    },
+    {
+        "id": "3df35c69d1cb247b7cbefa7f1da375e0",
+        "name": "Rodrigo Zarate",
+        "valid_for": 2
     }
 ]
